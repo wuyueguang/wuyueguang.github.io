@@ -964,7 +964,7 @@
 
             </div>
             <div class="weui-tabbar">
-                <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+                <a href="#tabbar" class="weui-tabbar__item weui-bar__item_on">
                     <img src="./images/icon_nav_form.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">客户认证</p>
                 </a>
@@ -972,11 +972,11 @@
                     <img src="./images/icon_nav_search.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">水印追踪</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="#tabbar_credit" class="weui-tabbar__item">
                     <img src="./images/icon_nav_layout.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">信用担保</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="#tabbar_hotel" class="weui-tabbar__item">
                     <img src="./images/icon_nav_feedback.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">酒店结账</p>
                 </a>
@@ -1005,15 +1005,15 @@
                     <img src="./images/icon_nav_form.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">客户认证</p>
                 </a>
-                <a href="#tabbar_trace" class="weui-tabbar__item" weui-bar__item_on>
+                <a href="#tabbar_trace" class="weui-tabbar__item weui-bar__item_on">
                     <img src="./images/icon_nav_search.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">水印追踪</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="#tabbar_credit" class="weui-tabbar__item">
                     <img src="./images/icon_nav_layout.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">信用担保</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="#tabbar_hotel" class="weui-tabbar__item">
                     <img src="./images/icon_nav_feedback.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">酒店结账</p>
                 </a>
@@ -1021,14 +1021,64 @@
         </div>
     </div>
 </div>
-<!--
-<script type="text/javascript">
-    $(function(){
-        $('.weui-tabbar__item').on('click', function () {
-            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
-        });
-    });
-</script>-->
+</script>
+<script type="text/html" id="tpl_tabbar_credit">
+<div class="page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-tab__panel">
+
+            </div>
+            <div class="weui-tabbar">
+                <a href="#tabbar" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_form.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">客户认证</p>
+                </a>
+                <a href="#tabbar_trace" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_search.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">水印追踪</p>
+                </a>
+                <a href="#tabbar_credit" class="weui-tabbar__item weui-bar__item_on">
+                    <img src="./images/icon_nav_layout.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">信用担保</p>
+                </a>
+                <a href="#tabbar_hotel" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_feedback.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">酒店结账</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+<script type="text/html" id="tpl_tabbar_hotel">
+<div class="page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-tab__panel">
+
+            </div>
+            <div class="weui-tabbar">
+                <a href="#tabbar" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_form.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">客户认证</p>
+                </a>
+                <a href="#tabbar_trace" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_search.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">水印追踪</p>
+                </a>
+                <a href="#tabbar_credit" class="weui-tabbar__item">
+                    <img src="./images/icon_nav_layout.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">信用担保</p>
+                </a>
+                <a href="#tabbar_hotel" class="weui-tabbar__item weui-bar__item_on">
+                    <img src="./images/icon_nav_feedback.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">酒店结账</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </script>
 
 
