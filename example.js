@@ -11,17 +11,17 @@ $(function () {
         _defaultPage: null,
         _pageIndex: 1,
         setDefault: function (defaultPage) {
-            alert("setDefault");
+            //alert("setDefault");
             this._defaultPage = this._find('name', defaultPage);
             return this;
         },
         setPageAppend: function (pageAppend) {
-            alert("setPageAppend");
+            //alert("setPageAppend");
             this._pageAppend = pageAppend;
             return this;
         },
         init: function () {
-            alert("init");
+            //alert("init");
             var self = this;
 
             $(window).on('hashchange', function () {
@@ -47,12 +47,12 @@ $(function () {
             return this;
         },
         push: function (config) {
-            alert("push");
+            //alert("push");
             this._configs.push(config);
             return this;
         },
         go: function (to) {
-            alert("go:to="+to);
+            //alert("go:to="+to);
             var config = this._find('name', to);
             if (!config) {
                 return;
@@ -84,7 +84,7 @@ $(function () {
             return this;
         },
         back: function () {
-            alert("back");
+            //alert("back");
             history.back();
         },
         _back: function (config) {
@@ -120,7 +120,7 @@ $(function () {
             return this;
         },
         _findInStack: function (url) {
-            alert("_findInStack:url="+url);
+            //alert("_findInStack:url="+url);
             var found = null;
             for(var i = 0, len = this._pageStack.length; i < len; i++){
                 var stack = this._pageStack[i];
@@ -132,7 +132,7 @@ $(function () {
             return found;
         },
         _find: function (key, value) {
-            alert("_find:key="+key+",value="+value);
+            //alert("_find:key="+key+",value="+value);
             var page = null;
             for (var i = 0, len = this._configs.length; i < len; i++) {
                 if (this._configs[i][key] === value) {
@@ -143,7 +143,7 @@ $(function () {
             return page;
         },
         _bind: function (page) {
-            alert("_bind:page="+page);
+            //alert("_bind:page="+page);
             var events = page.events || {};
             for (var t in events) {
                 for (var type in events[t]) {
