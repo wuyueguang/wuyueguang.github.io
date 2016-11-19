@@ -60,7 +60,7 @@ $(function () {
             location.hash = config.url;
         },
         _go: function (config) {
-            alert("_go:config="+config);
+            //alert("_go:config="+config);
             this._pageIndex ++;
 
             history.replaceState && history.replaceState({_pageIndex: this._pageIndex}, '', location.href);
@@ -88,7 +88,7 @@ $(function () {
             history.back();
         },
         _back: function (config) {
-            alert("_back");
+            //alert("_back");
             this._pageIndex --;
 
             var stack = this._pageStack.pop();
