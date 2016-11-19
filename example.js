@@ -120,7 +120,7 @@ $(function () {
             return this;
         },
         _findInStack: function (url) {
-            alert("_findInStack");
+            alert("_findInStack:url="+url);
             var found = null;
             for(var i = 0, len = this._pageStack.length; i < len; i++){
                 var stack = this._pageStack[i];
@@ -132,7 +132,7 @@ $(function () {
             return found;
         },
         _find: function (key, value) {
-            alert("_find");
+            alert("_find:key="+key+",value="+value);
             var page = null;
             for (var i = 0, len = this._configs.length; i < len; i++) {
                 if (this._configs[i][key] === value) {
@@ -143,7 +143,7 @@ $(function () {
             return page;
         },
         _bind: function (page) {
-            alert("_bind");
+            alert("_bind:page="+page);
             var events = page.events || {};
             for (var t in events) {
                 for (var type in events[t]) {
