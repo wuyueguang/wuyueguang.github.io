@@ -28,11 +28,11 @@ $(function () {
                 var state = history.state || {};
                 var url = location.hash.indexOf('#') === 0 ? location.hash : '#';
                 var page = self._find('url', url) || self._defaultPage;
-                if (state._pageIndex <= self._pageIndex || self._findInStack(url)) {
-                    self._back(page);
-                } else {
+                //if (state._pageIndex <= self._pageIndex || self._findInStack(url)) {
+                //    self._back(page);
+                //} else {
                     self._go(page);
-                }
+                //}
             });
 
             if (history.state && history.state._pageIndex) {
@@ -52,7 +52,7 @@ $(function () {
             return this;
         },
         go: function (to) {
-            alert("go");
+            alert("go:to="+to);
             var config = this._find('name', to);
             if (!config) {
                 return;
@@ -60,7 +60,7 @@ $(function () {
             location.hash = config.url;
         },
         _go: function (config) {
-            alert("_go");
+            alert("_go:config="+config);
             this._pageIndex ++;
 
             history.replaceState && history.replaceState({_pageIndex: this._pageIndex}, '', location.href);
