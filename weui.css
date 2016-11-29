@@ -700,6 +700,21 @@ input.weui-btn_plain-default {
   word-break: normal;
   word-wrap: break-word;
 }
+.weui-form-preview-credit__label {
+  float: left;
+  margin-right: 1em;
+  min-width: 4em;
+  color: #FFFFFF;
+  text-align: justify;
+  text-align-last: justify;
+}
+.weui-form-preview-credit__value {
+  display: block;
+  overflow: hidden;
+  word-break: normal;
+  word-wrap: break-word;
+  color: #FFFFFF;
+}
 .weui-form-preview__btn {
   position: relative;
   display: block;
