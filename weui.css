@@ -651,7 +651,7 @@ input.weui-btn_plain-default {
           transform: scaleY(0.5);
   left: 15px;
 }
-.weui-form-preview__hd .weui-form-preview__value {
+.weui-form-preview__hd .weui-form-preview__value .weui-form-preview-credit__value  {
   font-style: normal;
   font-size: 1.6em;
 }
@@ -713,6 +713,7 @@ input.weui-btn_plain-default {
   overflow: hidden;
   word-break: normal;
   word-wrap: break-word;
+  color: #FFFFFF;
 }
 .weui-form-preview__btn {
   position: relative;
