@@ -598,6 +598,10 @@ input.weui-btn_plain-default {
   position: relative;
   background-color: #FFFFFF;
 }
+.weui-form-preview-credit {
+  position: relative;
+  background-color: #555B65;
+}
 .weui-form-preview:before {
   content: " ";
   position: absolute;
